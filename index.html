@@ -12,9 +12,6 @@
 </head>
 
 <head>
-  <!Charts>
-  <title>Figure 1</title>
-<script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
 <!style for tables>
 <style>
   table {
@@ -116,22 +113,6 @@ classifier confidence to drop, as in Vlachos (2008)
       <td>4</td>
       </tr>
     </table>
-  <div id="chart_div">
-    <script type="text/javascript">
-google.charts.load('current', { 'packages' : ['corechart'] });
-google.charts.setOnLoadCallback(drawChart);
-['Eat', 2],
-['Study’, 4],
-[‘Exercise', 2]
-]);
-var options = {
-title: 'Figure 1'
-};
-var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-chart.draw(data, options);
-}
-</script>
-  </div>
   <div>
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
