@@ -113,6 +113,8 @@ These risks can be mitigated with good spacecraft design (Wetherholt and Heimann
         <td>Space exploration often leaves behind “space junk” (Whittaker, 2026): debris ranging in size from microscopic fragments, to full decommissioned satellites (Orbital Radar, 2026). There are thousands of pieces of debris currently in orbit around the planet (Bonnal, 2025) and these pieces have the capacity to do catastrophic harm to astronauts and current spacecraft (Schröder, 2025). Space agencies must track this debris to prevent collisions (Whittaker, 2026).</td>
       </tr>
     </table>
+  </p>
+ <p class="ex1" id="Benefits_InText">
   2 – The benefits <br>
 Experiments in space, on the Moon (Callaway, 2026) and on the International Space Station (ISS) have had vast positive impacts for life here on earth, examples including cancer research (ESA, 2024), renewable energy (ESA, 2023), and bone diseases (ESA, 2023). Conducting experiments in space removes the effect of gravity. Whilst this can be achieved on earth using parabolic flight (Villazon, 2021), it can only be used for short experiments. Conducting experiments on space stations such as the ISS allows for analysis over extended periods of time (Gaskill, 2024). <br>
 Examples of ISS experiments include the ADSEP-PIL-11, which focusses on growing crystals of medication that could be used to combat cancer (Mulligan, Et al., 2025), and the Osteocytes and Mechano-transduction experiment of 2015, which gave valuable knowledge that could be used to improve treatment for osteoporosis (Creech, 2016). <br> 
@@ -120,7 +122,7 @@ Outside of the ISS, the European Space Agency (ESA) recently launched the SOLARI
 Space exploration also plays a large role in driving innovation in robotics (Jiang et al., 2022), which can then be used in a wide number of capacities, including research (Kazmierczak, 2026), extraterrestrial missions (JAXA, 2026), manufacture (NASA, 2026), and medicine (NHS, 2025).<br>
 On top of all this, space is an industry worth over 600 billion USD, (Statista Research Department, 2025) that creates countless opportunities for jobs and education. NASA alone creates or supports 339,645 jobs across the US (Dreier, 2022), whilst the UK space sector employs 55,549 (The London Economics Space Team, 2024). <br>
 
-</p>
+
 <h3 id="Conclusion">Conclusion -Why we should conduct these experiments, despite the risks</h3>
   <p class="ex1" id="Conclusion_InText">
   This paper aimed to provide an understanding of why, despite the unique risks of space, conducting experiments in microgravity is worthwhile and beneficial, and we should continue to conduct these types of experiments in the future. Whilst space experiments come with extraordinary risks, they also give us the opportunity to make discoveries that we would not be able to make on Earth. All of our lives have in some way been improved by developments made in space, whether that be through improved treatments for our loved ones, cleaner energy, or everyday electronics made using robotics pioneered on the ISS.
@@ -221,8 +223,9 @@ On top of all this, space is an industry worth over 600 billion USD, (Statista R
     const AnalysisCount = displayWordCount("Analysis_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     const TableCount = displayWordCount("RisksTable");
+     const BenefitCount = displayWordCount("Benefits_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount + TableCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount + TableCount + BenefitCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
