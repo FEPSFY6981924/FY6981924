@@ -22,7 +22,7 @@
   td, th {
     border: 1px solid #dddddd;
     text-align: centre;
-    padding: 20px;
+    padding: 10px;
     margin-right: 50px;
     margin-left: 50px
   }
@@ -110,8 +110,10 @@ These risks can be mitigated with good spacecraft design (Wetherholt and Heimann
       </tr>
     </table>
 </p>
-
-  <p class="ex1">
+<h3 id="Conclusion">Conclusion -Why we should conduct these experiments, despite the risks</h3>
+  <p class="ex1" id="Conclusion_InText">
+   This paper aimed to provide an understanding of why, despite the unique risks of space, conducting experiments in microgravity is worthwhile and beneficial, and we should continue to conduct these types of experiments in the future. Whilst space experiments come with extraordinary risks, they also give us the opportunity to make discoveries that we would not be able to make on Earth. All of our lives have in some way been improved by developments made in space, whether that be through improved treatments for our loved ones, cleaner energy, or everyday items made using materials pioneered on the ISS. 
+  </p>
 
   <h3 id="References">References</h3>
   <p class="ex1">
@@ -206,8 +208,9 @@ These risks can be mitigated with good spacecraft design (Wetherholt and Heimann
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
