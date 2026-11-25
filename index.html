@@ -256,12 +256,15 @@ On top of all this, space is an industry worth over 600 billion USD, (Statista R
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
+    const IntroductionHeadCount = displayWordCount("Introduction");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const AnalysisHeadCount = displayWordCount("Analysis and Discussion");
     const ConclusionCount = displayWordCount("Conclusion_InText");
+    const ConclusionHeadCount = displayWordCount("Conclusion");
     const TableCount = displayWordCount("RisksTable");
-     const BenefitCount = displayWordCount("Benefits_InText");
+    const BenefitCount = displayWordCount("Benefits_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount + TableCount + BenefitCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount + TableCount + BenefitCount+IntroductionHeadCount+AnalysisHeadCount+ConclusionHeadCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
